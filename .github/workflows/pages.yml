@@ -1,34 +1,72 @@
-name: Hexo Deploy Automatically
+# name: Hexo Deploy Automatically
 
-on: [push]
+# on: [push]
+
+# jobs:
+#   build:
+
+#     runs-on: ubuntu-latest
+    
+#     strategy:
+#       matrix:
+#         node-version: [16.x]
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+        
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
+      
+#       - name: Generate
+#         run: |
+#           npm i && npx hexo g
+      
+#       - name: Deploy
+#         uses: peaceiris/actions-gh-pages@v3
+#         with:
+#           github_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_branch: gh-pages
+#           publish_dir: ./public
+#           cname: blog.xzh.gs
+#           force_orphan: true
+
+name: pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-    
-    strategy:
-      matrix:
-        node-version: [16.x]
-
+  deploy:
+    runs-on: ubuntu-18.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        
-      - name: Use Node.js ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
-      
-      - name: Generate
-        run: |
-          npm i && npx hexo g
-      
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm run build
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
-          cname: blog.xzh.gs
-          force_orphan: true
+          publish_branch: gh-pages  # default: gh-pages
