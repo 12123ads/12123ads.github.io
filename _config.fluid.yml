@@ -954,18 +954,18 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
-  banner_img_height: 60
+  banner_img: https://img.xzh.gs/i/2022/08/31/630f1f6e8a8d3.jpg
+  banner_img_height: 80
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
+  avatar: https://ae01.alicdn.com/kf/Hf836c3d7e7f4464a80c3dd507a3b162bf.jpg
   name: "XZH"
   intro: "XZH的小站"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/12123ads", tip: "GitHub" }
-    - { class: "iconfont icon-cliplist", link: "https://shop.xzh.gs" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-cliplist", link: "https://shop.xzh.gs", tip: "XZH的商店" }
+    - { class: "iconfont icon-telegram-fill", link: "https://t.me/xzhnb", tip: "TG" }
 
 
 #---------------------------
@@ -987,7 +987,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://img.xzh.gs/i/2022/08/31/630f1fd707a9e.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -1001,7 +1001,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://img.xzh.gs/i/2022/08/31/630f1ffeba77f.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
