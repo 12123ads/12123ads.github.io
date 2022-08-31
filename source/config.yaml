@@ -1,6 +1,6 @@
 name: ClientWorker 
 catch_rules:
-  - rule: _
+  - rule: .*
     transform_rules:
       - search: tj\.xzh\.gs
         action: skip
@@ -15,7 +15,7 @@ catch_rules:
           - https://cdn.staticfile.org
           - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs # 南大
           - https://cdnjs.sourcegcdn.com/ajax/libs # 全同步 https://cdnjs.cloudflare.com
-  - rule: _
+  - rule: .*
       - search: _ 
         action: fetch
         fetch:
