@@ -20,7 +20,7 @@ catch_rules:
           action: fetch
           fetch:
             engine: parallel
-        - search: (^5) 
+        - search: (^4|^5) 
           searchin: status 
           action: return
           return:
