@@ -2,7 +2,7 @@ name: ClientWorker
 catch_rules:
   - rule: _
     transform_rules:
-      -search: tj\.xzh\.gs
+      - search: tj\.xzh\.gs
         action: skip
   - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
     transform_rules:
