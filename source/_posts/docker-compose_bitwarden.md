@@ -1,6 +1,7 @@
 ---
 title: 利用docker快速搭建bitwarden个人密码管理器
 date: 2022-08-14 23:42:04
+updated: 2022-08-14 23:42:04
 tags: docker
 index_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 banner_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
