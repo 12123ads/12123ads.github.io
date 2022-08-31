@@ -1,8 +1,15 @@
 name: ClientWorker 
+cleaninterval: 1000*20 # 每20秒检测并清理一次
 catch_rules:
-    - rule: .*
+    - rule: ^https\:\/\/img\.xzh\.gs\/
       transform_rules:
-        - search: tj\.xzh\.gs
+        - search: _
+          action: fetch
+          fetch:
+            expire: 1000*60*60*24*365
+    - rule: ^https\:\/\/tj\.xzh\.gs\/
+      transform_rules:
+        - search: _
           action: skip
     - rule: ^https\:\/\/cdnjs\.cloudflare\.com\/ajax\/libs
       transform_rules:
@@ -15,31 +22,17 @@ catch_rules:
             - https://cdn.staticfile.org
             - https://mirrors.sustech.edu.cn/cdnjs/ajax/libs # 南大
             - https://cdnjs.sourcegcdn.com/ajax/libs # 全同步 https://cdnjs.cloudflare.com
-    - rule: .*
-      transform_rules:
-        - search: _ 
+        - search: _
           action: fetch
           fetch:
-            engine: parallel
-        - search: (^4|^5) 
+            delay: 200 #请求超时200ms后返回缓存
+        - search: ^https\:\/\/((cdn|fastly|gcore)\.jsdelivr\.net|unpkg\.com)
+          action: fetch
+          fetch:
+            expire: 1000*60*60*24*365 #CDN默认缓存一年
+        - search: (^5) 
           searchin: status 
           action: return
           return:
             body: The GateWay is down!This Page is provided by ClientWorker!
             status: 503
-        - search: ^https\:\/\/((cdn|fastly|gcore)\.jsdelivr\.net|unpkg\.com)
-          action: fetch
-          fetch:
-            timeout: 10000 #10秒请求超时
-        - search: ^https\:\/\/((cdn|fastly|gcore)\.jsdelivr\.net|unpkg\.com)
-          action: fetch
-          fetch:
-            expire: 1000*60*60*24*365 #CDN默认缓存一年
-        - search: \@latest\/
-          action: fetch
-          fetch:
-            expire: 1000*60*60 #latest缓存一小时
-        - search: _
-          action: fetch
-          fetch:
-            delay: 200 #请求超时200ms后返回缓存
