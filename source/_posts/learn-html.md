@@ -1,7 +1,7 @@
 ---
 title: HTML学习笔记
 date: 2022-09-03 10:55:44
-updated: 2022-09-03 
+updated: 2022-09-03 10:55:44
 categories: 
 - 学习笔记
 tags: 
@@ -20,8 +20,9 @@ banner_img: https://img.xzh.gs/i/2022/09/03/6312c7e438148.jpg
 
 # HTML使用CSS的方式：
 ## 内联式：
-内联式css样式表就是把css代码直接写在现有的HTML标签中。
+ - 内联式css样式表就是把css代码直接写在现有的HTML标签中。
 ## 嵌入式：
-就是可以把css样式代码写在 <style type="text/css"></style>标签之间。
+ - 就是可以把css样式代码写在```<style type="text/css"></style>```标签之间。
 ## 外部式：
-就是把css代码写在一个单独的外部文件中，这个css样式以```.css```为扩展名，在<head>内（不是在<style>标签内）使用<link>标签将css样式链接到html文件内。
+ - 就是把css代码写在一个单独的外部文件中，这个css样式以```.css```为扩展名，在<head>内（不是在<style>标签内）使用<link>标签将css样式链接到html文件内。
+
