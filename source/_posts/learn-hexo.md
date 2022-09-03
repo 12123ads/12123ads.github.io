@@ -1,8 +1,12 @@
 ---
 title: HTML学习笔记
 date: 2022-09-03 10:55:44
-categories: 学习笔记
-tags: hexo
+categories: 
+- 学习笔记
+tags: 
+- html
+index_img: https://img.xzh.gs/i/2022/09/03/6312c7e438148.jpg
+banner_img: https://img.xzh.gs/i/2022/09/03/6312c7e438148.jpg
 updated: 2022-09-03 10:55:44
 ---
 # 什么是站点？
