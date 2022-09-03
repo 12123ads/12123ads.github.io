@@ -3,7 +3,6 @@ title: HTML学习笔记
 date: 2022-09-03 10:55:44
 categories: 学习笔记
 tags: hexo
-comments: true
 updated: 2022-09-03 10:55:44
 ---
 # 什么是站点？
