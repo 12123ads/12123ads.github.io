@@ -34,4 +34,53 @@ banner_img: https://img.xzh.gs/i/2022/09/03/6312c7e438148.jpg
 3. 内联样式式：
 由于要将表现的内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时
 
->注意：三种css优先级，内联式>内部式>外部式
+# 实例
+## 内联式
+```html
+<!DOCTYPE html>
+<html>
+    <body>
+        <p style="color: red; font-size: 12px; font-weight: bold">内联式，红色，12px，粗体<p>
+    </body>
+</html>
+```
+## 嵌入式
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .p{color: blue;
+               font-size: 24px;
+               font-weight: bolder}
+        </style>
+    </head>
+    <body>
+        <p class="p">嵌入式，蓝色，24px，更粗的粗体</p>
+    </body>
+</html>
+```
+## 外部式
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="waibu.css">
+    </head>
+    <body>
+        <p class="p">外部式，绿色，3em，细体</p>
+    </body>
+</html>
+```
+```css
+.p{
+    color: green;
+    font-size: 3em;
+    font-weight: lighter;
+}
+```
+
+
+> 注意：三种css优先级，内联式>内部式>外部式
+> 16进制颜色，格式为aabbcc，可以简写为abc；白是#ffffff，简写为#fff；黑是#000000，简写为#000。
+> 字体大小：1em=16px。
