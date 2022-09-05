@@ -81,6 +81,10 @@ banner_img: https://img.xzh.gs/i/2022/09/03/6312c7e438148.jpg
 ```
 
 
-> 注意：三种css优先级，内联式>内部式>外部式
-> 16进制颜色，格式为aabbcc，可以简写为abc；白是#ffffff，简写为#fff；黑是#000000，简写为#000。
-> 字体大小：1em=16px。
+{% note warning %}
+三种CSS方法优先级：内联式>内嵌式>外部式
+{% endnote %}
+{% note info %}
+16进制颜色，格式为aabbcc，可以简写为abc；白是#ffffff，简写为#fff；黑是#000000，简写为#000。
+{% endnote %}
+<p class="note note-primary">字体大小：1em=16px。</p>
