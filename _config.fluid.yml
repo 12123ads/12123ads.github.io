@@ -1008,7 +1008,13 @@ links:
   # Member item of page
   items:
     - {
-      title: "Erhecy's Blog",
+      title: "小忧忧のBlog",
+      intro: "比起昨天还要高　比起前天连升八度",
+      link: "https://www.jerryyang.link/",
+      avatar: "https://external.galzy.eu.org/2022/JerryYang.XYY@outlook.com/favicon.ico"
+    }
+    - {
+      title: "MiaoMint's Blog",
       link: "https://blog.ohman.top",
       avatar: "https://q1.qlogo.cn/g?b=qq&k=G1ibIlnicR8Ij4CZO3BF6cVA&s=640"
     }
