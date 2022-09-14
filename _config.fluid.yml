@@ -1008,6 +1008,10 @@ links:
   # Member item of page
   items:
     - {
+      title: "云上咕咕",
+      intro: "新生代随缘更博客",
+      link: "https://blog.gugugu.cloud"
+    - {
       title: "小忧忧のBlog",
       intro: "比起昨天还要高　比起前天连升八度",
       link: "https://www.jerryyang.link/",
