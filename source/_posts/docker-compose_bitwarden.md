@@ -43,7 +43,7 @@ EOF
 ## 写入环境变量文件
 *注意改成自己的配置*
 ```env
-cat >> cnfig.env <<EOF
+cat >> config.env <<EOF
 SIGNUPS_ALLOWED=true
 DOMAIN=https://
 ROCKET_WORKERS=10
