@@ -1011,6 +1011,7 @@ links:
       title: "云上咕咕",
       intro: "新生代随缘更博客",
       link: "https://blog.gugugu.cloud",
+      avatar: "https://blog.gugugu.cloud/favicon.ico"
     }
     - {
       title: "小忧忧のBlog",
@@ -1025,8 +1026,8 @@ links:
     }
     - {
       title: "lx的blog",
-      link: "http://www.dllxsw.cc",
-      avatar: "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-08f1a3a9-d876-4382-9d27-2270f88a0d57/a7385faa-c33c-4e0e-8620-5adcb82a30ea.jpg"
+      link: "https://dllxsw.cc",
+      avatar: "https://dllinxuan.me/imgfile/lxlogo.png"
     }
     - {
       title: "Fluid Blog",
