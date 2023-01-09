@@ -1,8 +1,9 @@
 ---
 title: 利用docker快速搭建bitwarden个人密码管理器
 date: 2022-08-14 23:42:04
-updated: 2022-08-14 23:42:04
-tags: docker
+updated: 2023-01-09 23:45:00
+tags: 
+  - docker
 index_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 banner_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 ---
@@ -12,11 +13,8 @@ banner_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 ```shell
 curl -fsSL https://get.docker.com | bash
 ```
-## 安装docker-compose
-*接下来把docker-compose也安装上*
-```shell
-curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
+~~## 安装docker-compose~~
+> 由于最新版docker已自带compose，所以不需要再单独安装
 # 运行docker容器
 在你想要的位置新建一个文件夹，里面会存放bitwarden的配置文件和数据库
 ```shell
