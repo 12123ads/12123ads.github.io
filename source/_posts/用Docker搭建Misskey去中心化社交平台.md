@@ -35,7 +35,7 @@ cp .config/docker_example.env .config/docker.env
 vim .config/default.yml
 ```
 其中`url: https://example.tld/`改为你的实例域名
-**db**的`host`改为`docker-compose.yml`里的services名，`db，user，pass`分别改为你的数据库名，用户，密码。
+**db**的`host`改为`docker-compose.yml`里的services名，`db`，`user`，`pass`分别改为你的数据库名，用户，密码。
 **redis**的`host`改为`docker-compose.yml`里的services名。
 
 ### 编辑docker.env
