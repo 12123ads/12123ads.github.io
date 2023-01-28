@@ -4,6 +4,8 @@ date: 2022-08-14 23:42:04
 updated: 2023-01-09 23:45:00
 tags: 
   - docker
+categories:
+  - Docker
 index_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 banner_img: https://img.xzh.gs/i/2022/08/19/62ffaa43a4465.png
 ---

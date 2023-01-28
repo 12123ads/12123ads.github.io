@@ -5,6 +5,8 @@ updated: 2023-01-28 19:38:29
 tags:
     - misskey
     - docker
+categories:
+  - Docker
 index_img: https://img.xzh.gs/i/2023/01/09/63bc09376d061.png
 banner_img: https://img.xzh.gs/i/2023/01/09/63bc09947fec6.png
 ---
