@@ -4,6 +4,7 @@ date: 2022-04-07 20:04:24
 updated: 2022-4-20 15:14:32
 tags: 
   - hexo
+  - github
 index_img: https://img.xzh.gs/i/2022/08/19/62ffab297e915.png
 banner_img: https://img.xzh.gs/i/2022/08/19/62ffab297e915.png
 ---
