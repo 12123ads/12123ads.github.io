@@ -1,7 +1,7 @@
 ---
 title: 用Docker搭建Misskey去中心化社交平台
 date: 2023-01-09 23:45:00
-updated: 2023-01-09 23:45:00
+updated: 2023-01-28 19:38:29
 tags:
     - misskey
     - docker
@@ -48,7 +48,7 @@ vim .config/docker.env
 > 如果内存太小，建议直接选择已构建好的[镜像](https://hub.docker.com/r/misskey/misskey)
 ```bash
 docker compose build
-docker compose run --rm web yarn run init
+docker compose run --rm web pnpm run init
 ```
 
 ## 启动容器
@@ -141,7 +141,7 @@ git checkout master
 git pull
 git submodule update --init
 git stash pop
-sudo docker-compose build
-sudo docker-compose stop && sudo docker-compose up -d
+sudo docker compose build
+sudo docker compose stop && sudo docker compose up -d
 ```
 
