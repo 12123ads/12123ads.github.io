@@ -966,7 +966,6 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/12123ads", tip: "GitHub" }
     - { class: "iconfont icon-cliplist", link: "https://shop.xzh.gs", tip: "XZH的小店" }
-    - { class: "iconfont icon-telegram-fill", link: "https://t.me/xzhnb", tip: "TG" }
 
 
 #---------------------------
