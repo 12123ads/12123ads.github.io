@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: https://ae01.alicdn.com/kf/Hf836c3d7e7f4464a80c3dd507a3b162bf.jpg
+favicon: https://img.xzh.gs/i/2023/08/06/64ce934c0d625.jpg
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: https://ae01.alicdn.com/kf/Hf836c3d7e7f4464a80c3dd507a3b162bf.jpg
+apple_touch_icon: https://img.xzh.gs/i/2023/08/06/64ce934c0d625.jpg
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -353,7 +353,7 @@ navbar:
     - { key: "XZH的朋友们", link: "/links/", icon: "iconfont icon-link-fill" }
     #- { key: "XZH的其他网站"
     #submenu: [
-      #{ key: "MC皮肤站", link: "https://mc.xzh.gs/", icon:""}
+      #{ key: "MC皮肤站", link: "https://skin.xzh.gs/", icon:""}
     #]
     #}
 
@@ -1044,7 +1044,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名: XZH的博客</li><li>简介：咕咕咕？</li><li>链接：https://blog.xzh.gs</li><li>头像：https://ae01.alicdn.com/kf/Hf836c3d7e7f4464a80c3dd507a3b162bf.jpg</li></ul>'
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名: XZH的博客</li><li>简介：咕咕咕？</li><li>链接：https://blog.xzh.gs</li><li>头像：https://img.xzh.gs/i/2023/08/06/64ce934c0d625.jpg</li></ul>'
 
   # 评论插件
   # Comment plugin
